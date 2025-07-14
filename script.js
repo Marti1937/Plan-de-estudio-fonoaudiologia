@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.titulo {
+  text-align: center;
+  color: #314B6E;
+  margin-bottom: 30px;
+}
+
+.malla {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.anio {
+  flex: 1;
+  min-width: 220px;
+}
+
+.anio h2 {
+  background-color: #314B6E;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.materia {
+  background-color: #607EA2;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+.materia.aprobada {
+  background-color: #8197AC;
+}
+
+.materia.bloqueada {
+  opacity: 0.4;
+  pointer-events: none;
+}
